@@ -75,8 +75,7 @@ and nullable regex =  (* cf.(Brzozowski,1964),p.482,Def3.2, the δ-function*)
 
 
 
-(* Calculate the Brzozowski derivative using rendomly generated regular expression "random_regex" and an input symbol "input_char",
- and then check if the "input_char" is contained in the language represented by "regex_str".*)
+(* Calculate the Brzozowski derivative using rendomly generated regular expression "random_regex" and an input symbol "input_char".*)
 let () =
   Random.self_init ();
   let random_regex = generate_random_regex 0 in
@@ -91,6 +90,4 @@ let () =
   let derivative_str = string_of_regex derivative in (*Convert "derivative", which is a regular expression, to a string*)
   print_endline ("the Brzozowski derivative of \""^regex_str^ "\" with respect to \"" ^(String.make 1 input_char)^ "\" is \n\"" ^ derivative_str^"\"");
 
-  match derivative with   (* Pattern matching: Checking if the given regular expression accepts a character (or string), cf.(Brzozowski,1964),Thm4.2. I will use "nullable" here. *)
-  | EmptyStr -> print_endline ("The symbol \"" ^ (String.make 1 input_char) ^ "\" matches the regular expression \"" ^ regex_str ^ "\"")
-  | _ -> print_endline ("The symbol \"" ^ (String.make 1 input_char) ^ "\" does \"not\" match the regular expression \"" ^ regex_str ^ "\"")
+

@@ -3,6 +3,7 @@
  This program returns the Brzozowski derivative of a regular expression with respect to a character, 
   using a randomly generated regular expression and an input symbol over the lowercase Latin alphabet.
  Then, using the derivative, this program checks whether the input symbol (to be extended to a finite sequence) is contained in the randomly generated regular expression.
+
 The process is divided into three steps:
 (1) generating a random expression randomly and accepting standard input,
 (2) finding the Brzozowski derivative of the regular expression with respect to the input symbol, and 

@@ -14,6 +14,8 @@ The process is divided into three steps:
 
 REFERENCES:
 -Brzozowski, J.A.(1964).Derivatives of Regular Expressions. Journal of the ACM,11(4), pp481-494,https://dl.acm.org/doi/10.1145/321239.321249,
+
 -Krishnaswami, Neel.(2013,November 7).Antimirov Derivatives for Regular Expressions,
 https://semantic-domain.blogspot.com/2013/11/antimirov-derivatives-for-regular.html,
+
 -Goldstein, Harrison.(2017)regex-deriv.hs, https://gist.github.com/hgoldstein95/0fe2def7591b44391521d988f28abf03

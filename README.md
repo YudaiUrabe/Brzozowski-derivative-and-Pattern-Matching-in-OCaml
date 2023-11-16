@@ -5,7 +5,7 @@
 
 The process is divided into three steps:
 
-(1) generating a random expression randomly and accepting standard input,
+(1) generating a regular expression randomly and accepting standard input,
 
 (2) finding the Brzozowski derivative of the regular expression with respect to the input symbol, and 
 
